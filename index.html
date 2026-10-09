@@ -535,16 +535,16 @@
       <form id="applyForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
 
         <!-- Web3Forms -->
-        <input type="hidden" name="access_key" value="5b48779f-5179-44a7-9083-16e1489d6768">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
         <input type="hidden" name="subject" value="Нова кандидатура: Създател на UGC съдържание">
         <input type="hidden" name="from_name" value="Todorov Tees – Кандидатури">
         <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
 
         <!-- Полета, които се попълват автоматично от скрипта -->
-        <input type="hidden" name="Телефон" id="phoneFull">
-        <input type="hidden" name="Какво съдържание може да създава" id="contentFull">
-        <input type="hidden" name="Програми" id="toolsFull">
-        <input type="hidden" name="Допълнителна техника" id="gearFull">
+        <input type="hidden" name="Phone" id="phoneFull">
+        <input type="hidden" name="Content types" id="contentFull">
+        <input type="hidden" name="Software" id="toolsFull">
+        <input type="hidden" name="Extra equipment" id="gearFull">
 
         <!-- ================= 1. Лични данни ================= -->
         <fieldset class="step active" data-title="Лични данни">
@@ -554,12 +554,12 @@
           <div class="grid two" style="margin-bottom:20px">
             <div class="field">
               <label for="firstName">Име</label>
-              <input type="text" id="firstName" name="Име" autocomplete="given-name" placeholder="Иван" required>
+              <input type="text" id="firstName" name="First name" autocomplete="given-name" placeholder="Иван" required>
               <p class="error"></p>
             </div>
             <div class="field">
               <label for="lastName">Фамилия</label>
-              <input type="text" id="lastName" name="Фамилия" autocomplete="family-name" placeholder="Тодоров" required>
+              <input type="text" id="lastName" name="Last name" autocomplete="family-name" placeholder="Тодоров" required>
               <p class="error"></p>
             </div>
           </div>
@@ -588,12 +588,12 @@
           <div class="grid two">
             <div class="field">
               <label for="city">Град</label>
-              <input type="text" id="city" name="Град" autocomplete="address-level2" placeholder="София" required>
+              <input type="text" id="city" name="City" autocomplete="address-level2" placeholder="София" required>
               <p class="error"></p>
             </div>
             <div class="field">
               <label for="age">Възраст</label>
-              <input type="number" id="age" name="Възраст" inputmode="numeric" min="16" max="99" placeholder="24" data-msg="Въведи възраст между 16 и 99 години." required>
+              <input type="number" id="age" name="Age" inputmode="numeric" min="16" max="99" placeholder="24" data-msg="Въведи възраст между 16 и 99 години." required>
               <p class="error"></p>
             </div>
           </div>
@@ -618,7 +618,7 @@
           </div>
           <div class="field">
             <label for="portfolio">Линк към портфолио или личен сайт</label>
-            <input type="url" id="portfolio" name="Портфолио линк" placeholder="https://" data-msg="Въведи пълен линк, който започва с https://">
+            <input type="url" id="portfolio" name="Portfolio link" placeholder="https://" data-msg="Въведи пълен линк, който започва с https://">
             <p class="error"></p>
           </div>
         </fieldset>
@@ -631,20 +631,20 @@
           <div class="field" data-group="experience">
             <span class="label">Имаш ли предишен опит в създаването на UGC съдържание?</span>
             <div class="chips">
-              <label class="chip"><input type="radio" name="Предишен опит с UGC" value="Да" required><span>Да</span></label>
-              <label class="chip"><input type="radio" name="Предишен опит с UGC" value="Не"><span>Не</span></label>
+              <label class="chip"><input type="radio" name="UGC experience" value="Да" required><span>Да</span></label>
+              <label class="chip"><input type="radio" name="UGC experience" value="Не"><span>Не</span></label>
             </div>
             <p class="error"></p>
           </div>
 
           <div class="field" id="experienceDetails" hidden>
             <label for="experienceText">Ако да, опиши накратко.</label>
-            <textarea id="experienceText" name="Описание на опита" placeholder="Какви проекти си правил/а, за какви платформи и с какъв резултат?"></textarea>
+            <textarea id="experienceText" name="Experience description" placeholder="Какви проекти си правил/а, за какви платформи и с какъв резултат?"></textarea>
           </div>
 
           <div class="field">
             <label for="brands">Работил/а ли си с други брандове? Ако да, кои?</label>
-            <textarea id="brands" name="Работил с брандове" placeholder="Изброй брандовете или напиши „Не“."></textarea>
+            <textarea id="brands" name="Worked with brands" placeholder="Изброй брандовете или напиши „Не“."></textarea>
           </div>
 
           <div class="field">
@@ -683,7 +683,7 @@
 
           <div class="field">
             <label for="phoneModel">Смартфон (марка и модел)</label>
-            <input type="text" id="phoneModel" name="Смартфон" placeholder="напр. iPhone 14 Pro" autocomplete="off">
+            <input type="text" id="phoneModel" name="Smartphone" placeholder="напр. iPhone 14 Pro" autocomplete="off">
           </div>
 
           <div class="field">
@@ -697,7 +697,7 @@
 
           <div class="field">
             <label for="hours">Колко часа дневно можеш да отделяш?</label>
-            <input type="number" id="hours" name="Часове дневно" min="0.5" max="24" step="0.5" inputmode="decimal" placeholder="напр. 3">
+            <input type="number" id="hours" name="Hours per day" min="0.5" max="24" step="0.5" inputmode="decimal" placeholder="напр. 3">
           </div>
         </fieldset>
 
@@ -708,18 +708,18 @@
 
           <div class="field">
             <label for="creative">Креативна задача</label>
-            <textarea id="creative" name="Креативна задача" class="tall" placeholder="Опиши концепция за видео или снимка, която би създал/а за Todorov Tees: идея, локация, кадри, музика, послание."></textarea>
+            <textarea id="creative" name="Creative task" class="tall" placeholder="Опиши концепция за видео или снимка, която би създал/а за Todorov Tees: идея, локация, кадри, музика, послание."></textarea>
             <p class="hint">Може да добавиш и линк към сценарий или референция в полето за портфолио.</p>
           </div>
 
           <div class="field">
             <label for="why">Защо искаш да станеш част от Todorov Tees?</label>
-            <textarea id="why" name="Мотивация" placeholder="Какво те привлича в бранда?"></textarea>
+            <textarea id="why" name="Motivation" placeholder="Какво те привлича в бранда?"></textarea>
           </div>
 
           <div class="field">
             <label for="fit">Защо смяташ, че точно ти си подходящият кандидат?</label>
-            <textarea id="fit" name="Защо е подходящ кандидат" placeholder="Какво те отличава от останалите?"></textarea>
+            <textarea id="fit" name="Why suitable candidate" placeholder="Какво те отличава от останалите?"></textarea>
           </div>
         </fieldset>
 
@@ -731,7 +731,7 @@
           <div class="field">
             <span class="label">Портфолио (PDF)</span>
             <label class="file" data-empty="Избери PDF файл">
-              <input type="file" name="Портфолио PDF" accept="application/pdf,.pdf">
+              <input type="file" name="Portfolio PDF" accept="application/pdf,.pdf">
               <div class="file-ui">
                 <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></span>
                 <span class="file-text"><strong>Качи портфолио</strong><small>Избери PDF файл</small></span>
@@ -742,7 +742,7 @@
           <div class="field">
             <span class="label">Снимки</span>
             <label class="file" data-empty="Можеш да избереш няколко снимки">
-              <input type="file" name="Снимки" accept="image/*" multiple>
+              <input type="file" name="Photos" accept="image/*" multiple>
               <div class="file-ui">
                 <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span>
                 <span class="file-text"><strong>Качи снимки</strong><small>Можеш да избереш няколко снимки</small></span>
@@ -753,7 +753,7 @@
           <div class="field">
             <span class="label">Видеа</span>
             <label class="file" data-empty="Можеш да избереш няколко видеа">
-              <input type="file" name="Видеа" accept="video/*" multiple>
+              <input type="file" name="Videos" accept="video/*" multiple>
               <div class="file-ui">
                 <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
                 <span class="file-text"><strong>Качи видеа</strong><small>Можеш да избереш няколко видеа</small></span>
@@ -865,11 +865,11 @@
       backBtn.addEventListener('click', function () { if (current > 0) show(current - 1); });
 
       /* ---------- Условни полета ---------- */
-      var expRadios = form.querySelectorAll('input[name="Предишен опит с UGC"]');
+      var expRadios = form.querySelectorAll('input[name="UGC experience"]');
       var expDetails = document.getElementById('experienceDetails');
       Array.prototype.forEach.call(expRadios, function (r) {
         r.addEventListener('change', function () {
-          expDetails.hidden = form.querySelector('input[name="Предишен опит с UGC"]:checked').value !== 'Да';
+          expDetails.hidden = form.querySelector('input[name="UGC experience"]:checked').value !== 'Да';
         });
       });
 
@@ -993,7 +993,7 @@
         if (current < steps.length - 1) { show(current + 1); return; }
 
         // Подготовка на скритите полета
-        var number = document.getElementById('phone').value.trim();
+        var number = document.getElementById('phone').value.replace(/[^\d]/g, '').replace(/^0+/, '');
         document.getElementById('phoneFull').value = number ? selectedCountry[2] + ' ' + number : '—';
         document.getElementById('contentFull').value = collect('content', 'contentOther');
         document.getElementById('toolsFull').value = collect('tools', 'toolsOther');
