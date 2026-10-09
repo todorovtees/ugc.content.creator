@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="bg" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кандидатствай за позицията „Създател на UGC съдържание“ | Todorov Tees</title>
+  <meta name="description" content="Кандидатствай за позицията Създател на UGC съдържание в Todorov Tees.">
+  <meta name="color-scheme" content="dark">
+  <script>document.documentElement.className = 'js';</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #121212;
+      --surface-hover: #181818;
+      --line: #2a2a2a;
+      --line-strong: #5a5a5a;
+      --text: #ffffff;
+      --muted: #9b9b9b;
+      --danger: #ff7a7a;
+      --radius-field: 14px;
+      --radius-card: 28px;
+      --font: "Onest", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 20px 96px;
+    }
+
+    /* ---------- Заглавна част ---------- */
+    .hero { margin-bottom: 40px; }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(1.95rem, 5.2vw, 2.85rem);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* ---------- Карта на формата ---------- */
+    .card {
+      background: #0e0e0e;
+      border: 1px solid #1f1f1f;
+      border-radius: var(--radius-card);
+      padding: 36px 32px 32px;
+    }
+
+    .progress { margin-bottom: 32px; }
+
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .progress-track {
+      height: 3px;
+      border-radius: 3px;
+      background: #1f1f1f;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: var(--text);
+      border-radius: 3px;
+      transition: width 0.35s ease;
+    }
+
+    .no-js .progress { display: none; }
+
+    /* ---------- Стъпки ---------- */
+    .step { border: 0; margin: 0; padding: 0; min-width: 0; }
+    .no-js .step + .step { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line); }
+    .js .step { display: none; }
+    .js .step.active { display: block; animation: stepIn 0.3s ease; }
+
+    @keyframes stepIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .step-title {
+      margin: 0 0 6px;
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .step-desc {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* ---------- Полета ---------- */
+    .grid { display: grid; gap: 20px; }
+    .grid.two { grid-template-columns: 1fr; }
+
+    @media (min-width: 620px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+    }
+
+    .field { margin-bottom: 20px; }
+    .grid .field { margin-bottom: 0; }
+
+    .field > label,
+    .field > .label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.93rem;
+      font-weight: 500;
+    }
+
+    .req { color: var(--muted); margin-left: 2px; }
+
+    .hint {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 15px 18px;
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-field);
+      font: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      appearance: none;
+      -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+    textarea { min-height: 128px; resize: vertical; line-height: 1.55; }
+    textarea.tall { min-height: 176px; }
+
+    ::placeholder { color: #666; opacity: 1; }
+
+    input:hover, textarea:hover { border-color: #3d3d3d; }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--text);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.09);
+      background: #151515;
+    }
+
+    .field.invalid input,
+    .field.invalid textarea,
+    .field.invalid .phone-country { border-color: var(--danger); }
+
+    .error {
+      display: none;
+      margin: 8px 0 0;
+      color: var(--danger);
+      font-size: 0.85rem;
+    }
+    .field.invalid .error { display: block; }
+
+    /* ---------- Телефон ---------- */
+    .phone { display: flex; gap: 10px; }
+    .phone input { flex: 1; min-width: 0; }
+
+    .country { position: relative; flex: none; }
+
+    .phone-country {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 100%;
+      padding: 0 14px 0 16px;
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-field);
+      font: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .phone-country:hover { border-color: #3d3d3d; }
+    .phone-country:focus-visible,
+    .phone-country[aria-expanded="true"] {
+      outline: none;
+      border-color: var(--text);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.09);
+    }
+
+    .flag {
+      width: 22px;
+      height: 16px;
+      border-radius: 3px;
+      object-fit: cover;
+      background: #222;
+      flex: none;
+    }
+
+    .chev { width: 12px; height: 12px; opacity: 0.6; flex: none; }
+
+    .country-list {
+      position: absolute;
+      z-index: 20;
+      top: calc(100% + 8px);
+      left: 0;
+      width: 290px;
+      max-height: 280px;
+      overflow-y: auto;
+      margin: 0;
+      padding: 6px;
+      list-style: none;
+      background: #141414;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+    }
+    .country-list[hidden] { display: none; }
+
+    .country-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .country-list li:hover,
+    .country-list li:focus-visible,
+    .country-list li[aria-selected="true"] { background: #222; outline: none; }
+    .country-list .dial { margin-left: auto; color: var(--muted); }
+
+    /* ---------- Чипове (радио и чекбокс) ---------- */
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .chip { position: relative; }
+
+    .chip input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .chip span {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 18px;
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+      user-select: none;
+    }
+
+    .chip:hover span { border-color: #4a4a4a; background: var(--surface-hover); }
+
+    .chip input:checked + span {
+      background: var(--text);
+      color: #0a0a0a;
+      border-color: var(--text);
+      font-weight: 500;
+    }
+
+    .chip input:focus-visible + span {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .field.invalid .chip span { border-color: var(--danger); }
+
+    .reveal { margin-top: 14px; }
+    .reveal[hidden] { display: none; }
+
+    /* ---------- Файлове ---------- */
+    .file { position: relative; }
+
+    .file input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .file-ui {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--surface);
+      border: 1px dashed #3a3a3a;
+      border-radius: var(--radius-field);
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .file:hover .file-ui,
+    .file.drag .file-ui { border-color: var(--text); background: var(--surface-hover); }
+
+    .file input:focus-visible + .file-ui {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .file-icon {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: #1c1c1c;
+      border: 1px solid var(--line);
+    }
+    .file-icon svg { width: 20px; height: 20px; }
+
+    .file-text { min-width: 0; }
+    .file-text strong { display: block; font-weight: 500; font-size: 0.95rem; }
+    .file-text small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.85rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .file.has-files .file-text small { color: var(--text); }
+
+    /* ---------- Съгласие ---------- */
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .consent input {
+      flex: none;
+      width: 20px;
+      height: 20px;
+      margin: 2px 0 0;
+      appearance: none;
+      background: var(--surface);
+      border: 1px solid #444;
+      border-radius: 6px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .consent input:checked { background: var(--text); border-color: var(--text); }
+    .consent input:checked::after {
+      content: "";
+      width: 9px;
+      height: 5px;
+      border-left: 2px solid #0a0a0a;
+      border-bottom: 2px solid #0a0a0a;
+      transform: translateY(-1px) rotate(-45deg);
+    }
+    .consent input:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+    /* ---------- Бутони ---------- */
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 34px;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-primary {
+      margin-left: auto;
+      background: var(--text);
+      color: #0a0a0a;
+      border: 1px solid var(--text);
+    }
+    .btn-primary:hover { background: #e6e6e6; border-color: #e6e6e6; }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-primary:disabled { opacity: 0.6; cursor: progress; }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    .btn-ghost:hover { border-color: var(--line-strong); background: var(--surface); }
+    .btn-ghost[hidden] { display: none; }
+
+    .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+    .form-error {
+      display: none;
+      margin-top: 20px;
+      padding: 14px 18px;
+      border: 1px solid #5a2a2a;
+      background: #1a1010;
+      border-radius: var(--radius-field);
+      color: #ffb4b4;
+      font-size: 0.92rem;
+    }
+    .form-error.show { display: block; }
+
+    /* ---------- Успешно изпращане ---------- */
+    .done { display: none; text-align: center; padding: 28px 0 12px; }
+    .done.show { display: block; animation: stepIn 0.4s ease; }
+
+    .done-mark {
+      display: grid;
+      place-items: center;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: var(--text);
+    }
+    .done-mark svg { width: 28px; height: 28px; }
+
+    .done h2 { margin: 0 0 10px; font-size: 1.6rem; font-weight: 600; letter-spacing: -0.015em; }
+    .done p { margin: 0 auto; max-width: 44ch; color: var(--muted); }
+
+    .botcheck { display: none !important; }
+
+    .fineprint { margin: 28px 0 0; text-align: center; color: #666; font-size: 0.82rem; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      margin: -1px; padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 520px) {
+      .page { padding: 44px 14px 64px; }
+      .card { padding: 28px 18px 24px; border-radius: 24px; }
+      .btn { padding: 0 26px; }
+      .country-list { width: min(290px, 80vw); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <h1>Кандидатствай за позицията „Създател на UGC съдържание“</h1>
+      <p>Обичаш да създаваш снимки и видеа, които привличат вниманието? Искаш да бъдеш част от развиващ се български бранд? Кандидатствай и покажи своята креативност.</p>
+    </header>
+
+    <div class="card">
+
+      <div class="progress" id="progress" aria-live="polite">
+        <div class="progress-meta">
+          <span id="progressLabel">Стъпка 1 от 6</span>
+          <span id="progressName">Лични данни</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+
+      <form id="applyForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+
+        <!-- Web3Forms -->
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Нова кандидатура: Създател на UGC съдържание">
+        <input type="hidden" name="from_name" value="Todorov Tees – Кандидатури">
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+        <!-- Полета, които се попълват автоматично от скрипта -->
+        <input type="hidden" name="Телефон" id="phoneFull">
+        <input type="hidden" name="Какво съдържание може да създава" id="contentFull">
+        <input type="hidden" name="Програми" id="toolsFull">
+        <input type="hidden" name="Допълнителна техника" id="gearFull">
+
+        <!-- ================= 1. Лични данни ================= -->
+        <fieldset class="step active" data-title="Лични данни">
+          <legend class="step-title">Лични данни</legend>
+          <p class="step-desc">Да се запознаем. Полетата без допълнителна отметка са задължителни.</p>
+
+          <div class="grid two" style="margin-bottom:20px">
+            <div class="field">
+              <label for="firstName">Име</label>
+              <input type="text" id="firstName" name="Име" autocomplete="given-name" placeholder="Иван" required>
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label for="lastName">Фамилия</label>
+              <input type="text" id="lastName" name="Фамилия" autocomplete="family-name" placeholder="Тодоров" required>
+              <p class="error"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Имейл адрес</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="ime@example.com" data-msg="Въведи валиден имейл адрес." required>
+            <p class="error"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон <span class="req">(по желание)</span></label>
+            <div class="phone">
+              <div class="country" id="country">
+                <button type="button" class="phone-country" id="countryBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Избор на държава">
+                  <img class="flag" id="countryFlag" src="https://flagcdn.com/w40/bg.png" alt="">
+                  <span id="countryDial">+359</span>
+                  <svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
+                </button>
+                <ul class="country-list" id="countryList" role="listbox" tabindex="-1" hidden></ul>
+              </div>
+              <input type="tel" id="phone" autocomplete="tel-national" inputmode="tel" placeholder="88 888 8888">
+            </div>
+          </div>
+
+          <div class="grid two">
+            <div class="field">
+              <label for="city">Град</label>
+              <input type="text" id="city" name="Град" autocomplete="address-level2" placeholder="София" required>
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label for="age">Възраст</label>
+              <input type="number" id="age" name="Възраст" inputmode="numeric" min="16" max="99" placeholder="24" data-msg="Въведи възраст между 16 и 99 години." required>
+              <p class="error"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ================= 2. Социални мрежи ================= -->
+        <fieldset class="step" data-title="Социални мрежи и портфолио">
+          <legend class="step-title">Социални мрежи и портфолио</legend>
+          <p class="step-desc">Покажи ни къде публикуваш. Попълни само това, което имаш.</p>
+
+          <div class="field">
+            <label for="instagram">Instagram профил</label>
+            <input type="text" id="instagram" name="Instagram" placeholder="@потребителско_име или линк към профила" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="tiktok">TikTok профил</label>
+            <input type="text" id="tiktok" name="TikTok" placeholder="@потребителско_име или линк към профила" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="facebook">Facebook профил</label>
+            <input type="text" id="facebook" name="Facebook" placeholder="Линк към профила или страницата" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="portfolio">Линк към портфолио или личен сайт</label>
+            <input type="url" id="portfolio" name="Портфолио линк" placeholder="https://" data-msg="Въведи пълен линк, който започва с https://">
+            <p class="error"></p>
+          </div>
+        </fieldset>
+
+        <!-- ================= 3. Опит ================= -->
+        <fieldset class="step" data-title="Опит и квалификация">
+          <legend class="step-title">Опит и квалификация</legend>
+          <p class="step-desc">Нямаш опит? Няма проблем – разкажи ни какво можеш.</p>
+
+          <div class="field" data-group="experience">
+            <span class="label">Имаш ли предишен опит в създаването на UGC съдържание?</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="Предишен опит с UGC" value="Да" required><span>Да</span></label>
+              <label class="chip"><input type="radio" name="Предишен опит с UGC" value="Не"><span>Не</span></label>
+            </div>
+            <p class="error"></p>
+          </div>
+
+          <div class="field" id="experienceDetails" hidden>
+            <label for="experienceText">Ако да, опиши накратко.</label>
+            <textarea id="experienceText" name="Описание на опита" placeholder="Какви проекти си правил/а, за какви платформи и с какъв резултат?"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="brands">Работил/а ли си с други брандове? Ако да, кои?</label>
+            <textarea id="brands" name="Работил с брандове" placeholder="Изброй брандовете или напиши „Не“."></textarea>
+          </div>
+
+          <div class="field">
+            <span class="label">Какво съдържание можеш да създаваш?</span>
+            <div class="chips" data-collect="content">
+              <label class="chip"><input type="checkbox" value="Продуктови видеа"><span>Продуктови видеа</span></label>
+              <label class="chip"><input type="checkbox" value="Lifestyle снимки"><span>Lifestyle снимки</span></label>
+              <label class="chip"><input type="checkbox" value="Fashion съдържание"><span>Fashion съдържание</span></label>
+              <label class="chip"><input type="checkbox" value="Reels"><span>Reels</span></label>
+              <label class="chip"><input type="checkbox" value="TikTok видеа"><span>TikTok видеа</span></label>
+              <label class="chip"><input type="checkbox" value="Unboxing"><span>Unboxing</span></label>
+              <label class="chip"><input type="checkbox" value="Друго" data-other="contentOther"><span>Друго</span></label>
+            </div>
+            <div class="reveal" id="contentOtherWrap" hidden>
+              <input type="text" id="contentOther" placeholder="Какво друго съдържание създаваш?">
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="label">Какви програми използваш?</span>
+            <div class="chips" data-collect="tools">
+              <label class="chip"><input type="checkbox" value="Canva"><span>Canva</span></label>
+              <label class="chip"><input type="checkbox" value="CapCut"><span>CapCut</span></label>
+              <label class="chip"><input type="checkbox" value="Друго" data-other="toolsOther"><span>Друго</span></label>
+            </div>
+            <div class="reveal" id="toolsOtherWrap" hidden>
+              <input type="text" id="toolsOther" placeholder="Кои други програми използваш?">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ================= 4. Техника ================= -->
+        <fieldset class="step" data-title="Техника и наличност">
+          <legend class="step-title">Техника и наличност</legend>
+          <p class="step-desc">Не е нужно да имаш професионално оборудване – важна е идеята.</p>
+
+          <div class="field">
+            <label for="phoneModel">Смартфон (марка и модел)</label>
+            <input type="text" id="phoneModel" name="Смартфон" placeholder="напр. iPhone 14 Pro" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <span class="label">С каква друга техника разполагаш?</span>
+            <div class="chips" data-collect="gear">
+              <label class="chip"><input type="checkbox" value="Осветление"><span>Осветление</span></label>
+              <label class="chip"><input type="checkbox" value="Микрофон"><span>Микрофон</span></label>
+              <label class="chip"><input type="checkbox" value="Статив"><span>Статив</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="hours">Колко часа дневно можеш да отделяш?</label>
+            <input type="number" id="hours" name="Часове дневно" min="0.5" max="24" step="0.5" inputmode="decimal" placeholder="напр. 3">
+          </div>
+        </fieldset>
+
+        <!-- ================= 5. Креативна задача ================= -->
+        <fieldset class="step" data-title="Креативна задача и мотивация">
+          <legend class="step-title">Креативна задача и мотивация</legend>
+          <p class="step-desc">Тук искаме да видим как мислиш. Няма грешен отговор.</p>
+
+          <div class="field">
+            <label for="creative">Креативна задача</label>
+            <textarea id="creative" name="Креативна задача" class="tall" placeholder="Опиши концепция за видео или снимка, която би създал/а за Todorov Tees: идея, локация, кадри, музика, послание."></textarea>
+            <p class="hint">Може да добавиш и линк към сценарий или референция в полето за портфолио.</p>
+          </div>
+
+          <div class="field">
+            <label for="why">Защо искаш да станеш част от Todorov Tees?</label>
+            <textarea id="why" name="Мотивация" placeholder="Какво те привлича в бранда?"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="fit">Защо смяташ, че точно ти си подходящият кандидат?</label>
+            <textarea id="fit" name="Защо е подходящ кандидат" placeholder="Какво те отличава от останалите?"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ================= 6. Файлове ================= -->
+        <fieldset class="step" data-title="Файлове">
+          <legend class="step-title">Файлове</legend>
+          <p class="step-desc">Прикачи най-доброто от работата си. Всички полета са по желание.</p>
+
+          <div class="field">
+            <span class="label">Портфолио (PDF)</span>
+            <label class="file" data-empty="Избери PDF файл">
+              <input type="file" name="Портфолио PDF" accept="application/pdf,.pdf">
+              <div class="file-ui">
+                <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></span>
+                <span class="file-text"><strong>Качи портфолио</strong><small>Избери PDF файл</small></span>
+              </div>
+            </label>
+          </div>
+
+          <div class="field">
+            <span class="label">Снимки</span>
+            <label class="file" data-empty="Можеш да избереш няколко снимки">
+              <input type="file" name="Снимки" accept="image/*" multiple>
+              <div class="file-ui">
+                <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span>
+                <span class="file-text"><strong>Качи снимки</strong><small>Можеш да избереш няколко снимки</small></span>
+              </div>
+            </label>
+          </div>
+
+          <div class="field">
+            <span class="label">Видеа</span>
+            <label class="file" data-empty="Можеш да избереш няколко видеа">
+              <input type="file" name="Видеа" accept="video/*" multiple>
+              <div class="file-ui">
+                <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
+                <span class="file-text"><strong>Качи видеа</strong><small>Можеш да избереш няколко видеа</small></span>
+              </div>
+            </label>
+            <p class="hint">Ако файловете са големи, добави линк към Google Drive или WeTransfer в полето за портфолио.</p>
+          </div>
+
+          <div class="field" data-group="consent">
+            <label class="consent">
+              <input type="checkbox" id="consent" required>
+              <span>Съгласявам се личните ми данни да бъдат обработвани единствено за целите на подбора за тази позиция.</span>
+            </label>
+            <p class="error">Необходимо е съгласие, за да изпратим кандидатурата.</p>
+          </div>
+        </fieldset>
+
+        <div class="form-error" id="formError" role="alert"></div>
+
+        <div class="actions">
+          <button type="button" class="btn btn-ghost" id="backBtn" hidden>Назад</button>
+          <button type="submit" class="btn btn-primary" id="nextBtn">Продължи</button>
+        </div>
+      </form>
+
+      <div class="done" id="done" role="status">
+        <div class="done-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+        </div>
+        <h2>Кандидатурата е изпратена</h2>
+        <p>Благодарим ти, че отдели време. Ще прегледаме работата ти и ще се свържем с теб на посочения имейл.</p>
+      </div>
+
+    </div>
+
+    <p class="fineprint">Todorov Tees · Кандидатура за Създател на UGC съдържание</p>
+  </main>
+
+  <script>
+    (function () {
+      var form = document.getElementById('applyForm');
+      var steps = Array.prototype.slice.call(form.querySelectorAll('.step'));
+      var nextBtn = document.getElementById('nextBtn');
+      var backBtn = document.getElementById('backBtn');
+      var formError = document.getElementById('formError');
+      var current = 0;
+
+      /* ---------- Навигация между стъпките ---------- */
+      function show(i) {
+        current = i;
+        steps.forEach(function (s, idx) { s.classList.toggle('active', idx === i); });
+        document.getElementById('progressLabel').textContent = 'Стъпка ' + (i + 1) + ' от ' + steps.length;
+        document.getElementById('progressName').textContent = steps[i].getAttribute('data-title');
+        document.getElementById('progressFill').style.width = ((i + 1) / steps.length * 100) + '%';
+        backBtn.hidden = i === 0;
+        nextBtn.textContent = i === steps.length - 1 ? 'Изпрати кандидатурата' : 'Продължи';
+        formError.classList.remove('show');
+        var top = document.querySelector('.hero').getBoundingClientRect().bottom + window.scrollY - 24;
+        window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+      }
+
+      /* ---------- Валидация ---------- */
+      function fieldOf(el) { return el.closest('.field'); }
+
+      function setError(el, message) {
+        var field = fieldOf(el);
+        if (!field) return;
+        field.classList.add('invalid');
+        var p = field.querySelector('.error');
+        if (p && message) p.textContent = message;
+      }
+
+      function clearError(el) {
+        var field = fieldOf(el);
+        if (field) field.classList.remove('invalid');
+      }
+
+      function messageFor(el) {
+        if (el.validity.valueMissing) return 'Моля, попълни това поле.';
+        return el.getAttribute('data-msg') || 'Проверѝ въведената стойност.';
+      }
+
+      function validateStep(step) {
+        var firstBad = null;
+        var controls = step.querySelectorAll('input, textarea');
+        Array.prototype.forEach.call(controls, function (el) {
+          if (el.type === 'file' || el.type === 'hidden') return;
+          if (el.type === 'radio') {
+            var group = form.querySelectorAll('input[type="radio"][name="' + el.name + '"]');
+            var anyChecked = Array.prototype.some.call(group, function (r) { return r.checked; });
+            if (el.required && !anyChecked) {
+              setError(el, 'Моля, избери отговор.');
+              firstBad = firstBad || el;
+            }
+            return;
+          }
+          if (!el.checkValidity()) {
+            setError(el, el.type === 'checkbox' ? null : messageFor(el));
+            firstBad = firstBad || el;
+          }
+        });
+        if (firstBad) firstBad.focus({ preventScroll: false });
+        return !firstBad;
+      }
+
+      form.addEventListener('input', function (e) { clearError(e.target); });
+      form.addEventListener('change', function (e) { clearError(e.target); });
+
+      backBtn.addEventListener('click', function () { if (current > 0) show(current - 1); });
+
+      /* ---------- Условни полета ---------- */
+      var expRadios = form.querySelectorAll('input[name="Предишен опит с UGC"]');
+      var expDetails = document.getElementById('experienceDetails');
+      Array.prototype.forEach.call(expRadios, function (r) {
+        r.addEventListener('change', function () {
+          expDetails.hidden = form.querySelector('input[name="Предишен опит с UGC"]:checked').value !== 'Да';
+        });
+      });
+
+      Array.prototype.forEach.call(form.querySelectorAll('input[data-other]'), function (box) {
+        var input = document.getElementById(box.getAttribute('data-other'));
+        var wrap = document.getElementById(box.getAttribute('data-other') + 'Wrap');
+        box.addEventListener('change', function () {
+          wrap.hidden = !box.checked;
+          if (box.checked) input.focus();
+        });
+      });
+
+      /* ---------- Избор на държава ---------- */
+      var countries = [
+        ['bg', 'България', '+359'], ['ro', 'Румъния', '+40'], ['gr', 'Гърция', '+30'],
+        ['rs', 'Сърбия', '+381'], ['mk', 'Северна Македония', '+389'], ['tr', 'Турция', '+90'],
+        ['cy', 'Кипър', '+357'], ['de', 'Германия', '+49'], ['at', 'Австрия', '+43'],
+        ['gb', 'Обединено кралство', '+44'], ['fr', 'Франция', '+33'], ['it', 'Италия', '+39'],
+        ['es', 'Испания', '+34'], ['nl', 'Нидерландия', '+31'], ['us', 'САЩ', '+1']
+      ];
+      var selectedCountry = countries[0];
+      var countryBtn = document.getElementById('countryBtn');
+      var countryList = document.getElementById('countryList');
+
+      countries.forEach(function (c) {
+        var li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.setAttribute('tabindex', '-1');
+        li.setAttribute('data-code', c[0]);
+        li.innerHTML = '<img class="flag" src="https://flagcdn.com/w40/' + c[0] + '.png" alt=""><span>' + c[1] + '</span><span class="dial">' + c[2] + '</span>';
+        li.addEventListener('click', function () { choose(c); });
+        li.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); choose(c); }
+          if (e.key === 'ArrowDown' && li.nextElementSibling) { e.preventDefault(); li.nextElementSibling.focus(); }
+          if (e.key === 'ArrowUp' && li.previousElementSibling) { e.preventDefault(); li.previousElementSibling.focus(); }
+        });
+        countryList.appendChild(li);
+      });
+
+      function markSelected() {
+        Array.prototype.forEach.call(countryList.children, function (li) {
+          li.setAttribute('aria-selected', li.getAttribute('data-code') === selectedCountry[0] ? 'true' : 'false');
+        });
+      }
+
+      function choose(c) {
+        selectedCountry = c;
+        document.getElementById('countryFlag').src = 'https://flagcdn.com/w40/' + c[0] + '.png';
+        document.getElementById('countryDial').textContent = c[2];
+        closeList();
+        countryBtn.focus();
+        markSelected();
+      }
+
+      function openList() {
+        countryList.hidden = false;
+        countryBtn.setAttribute('aria-expanded', 'true');
+        var sel = countryList.querySelector('[aria-selected="true"]') || countryList.firstElementChild;
+        if (sel) sel.focus();
+      }
+
+      function closeList() {
+        countryList.hidden = true;
+        countryBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      countryBtn.addEventListener('click', function () { countryList.hidden ? openList() : closeList(); });
+      countryBtn.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowDown') { e.preventDefault(); openList(); }
+      });
+      document.addEventListener('click', function (e) {
+        if (!document.getElementById('country').contains(e.target)) closeList();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !countryList.hidden) { closeList(); countryBtn.focus(); }
+      });
+      markSelected();
+
+      /* ---------- Файлове ---------- */
+      Array.prototype.forEach.call(form.querySelectorAll('.file'), function (wrap) {
+        var input = wrap.querySelector('input[type="file"]');
+        var small = wrap.querySelector('small');
+        input.addEventListener('change', function () {
+          var files = Array.prototype.slice.call(input.files);
+          if (!files.length) {
+            small.textContent = wrap.getAttribute('data-empty');
+            wrap.classList.remove('has-files');
+          } else {
+            small.textContent = files.length === 1 ? files[0].name : files.length + ' файла: ' + files.map(function (f) { return f.name; }).join(', ');
+            wrap.classList.add('has-files');
+          }
+        });
+        ['dragenter', 'dragover'].forEach(function (ev) {
+          wrap.addEventListener(ev, function () { wrap.classList.add('drag'); });
+        });
+        ['dragleave', 'drop'].forEach(function (ev) {
+          wrap.addEventListener(ev, function () { wrap.classList.remove('drag'); });
+        });
+      });
+
+      /* ---------- Събиране на отметките ---------- */
+      function collect(group, otherId) {
+        var box = form.querySelector('[data-collect="' + group + '"]');
+        var values = [];
+        Array.prototype.forEach.call(box.querySelectorAll('input:checked'), function (c) {
+          if (c.hasAttribute('data-other')) {
+            var other = document.getElementById(otherId).value.trim();
+            values.push(other ? 'Друго: ' + other : 'Друго');
+          } else {
+            values.push(c.value);
+          }
+        });
+        return values.join(', ') || '—';
+      }
+
+      /* ---------- Изпращане ---------- */
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!validateStep(steps[current])) return;
+        if (current < steps.length - 1) { show(current + 1); return; }
+
+        // Подготовка на скритите полета
+        var number = document.getElementById('phone').value.trim();
+        document.getElementById('phoneFull').value = number ? selectedCountry[2] + ' ' + number : '—';
+        document.getElementById('contentFull').value = collect('content', 'contentOther');
+        document.getElementById('toolsFull').value = collect('tools', 'toolsOther');
+        document.getElementById('gearFull').value = collect('gear');
+
+        nextBtn.disabled = true;
+        nextBtn.textContent = 'Изпращане…';
+        formError.classList.remove('show');
+
+        fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+          .then(function (res) { return res.json().then(function (data) { return { ok: res.ok && data.success, data: data }; }); })
+          .then(function (result) {
+            if (!result.ok) throw new Error(result.data && result.data.message ? result.data.message : 'Грешка при изпращането.');
+            form.style.display = 'none';
+            document.getElementById('progress').style.display = 'none';
+            document.getElementById('done').classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          })
+          .catch(function (err) {
+            formError.textContent = 'Кандидатурата не беше изпратена: ' + err.message + ' Опитай отново след малко.';
+            formError.classList.add('show');
+            nextBtn.disabled = false;
+            nextBtn.textContent = 'Изпрати кандидатурата';
+          });
+      });
+
+      show(0);
+    })();
+  </script>
+</body>
+</html>
